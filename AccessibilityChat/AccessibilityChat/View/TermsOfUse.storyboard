@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g7Z-am-oeP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Stilu-Bold.otf">
+            <string>Stilu-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Terms Of Use View Controller-->
+        <scene sceneID="RRs-Cy-m9M">
+            <objects>
+                <viewController storyboardIdentifier="TermsOfUseViewController" id="g7Z-am-oeP" customClass="TermsOfUseViewController" customModule="AccessibilityChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hRn-Yj-r4u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KOS-02-W2N">
+                                <rect key="frame" x="16" y="30" width="343" height="627"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                </accessibility>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="Stilu-Bold" family="Stilu" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mc7-ro-xu9" firstAttribute="trailing" secondItem="KOS-02-W2N" secondAttribute="trailing" constant="16" id="8Cw-9h-Fs3"/>
+                            <constraint firstItem="KOS-02-W2N" firstAttribute="leading" secondItem="mc7-ro-xu9" secondAttribute="leading" constant="16" id="ImI-4c-Rua"/>
+                            <constraint firstItem="mc7-ro-xu9" firstAttribute="bottom" secondItem="KOS-02-W2N" secondAttribute="bottom" constant="10" id="Jhj-ak-rdv"/>
+                            <constraint firstItem="KOS-02-W2N" firstAttribute="top" secondItem="mc7-ro-xu9" secondAttribute="top" constant="10" id="RnS-jc-VTV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mc7-ro-xu9"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="KOS-02-W2N" id="VvK-dp-FBQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uFP-Se-HVf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2245.5999999999999" y="-1039.4302848575712"/>
+        </scene>
+    </scenes>
+</document>

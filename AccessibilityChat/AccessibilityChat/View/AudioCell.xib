@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="audioCellId" id="ANH-uy-7cJ" customClass="AudioCell" customModule="AccessibilityChat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="283" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="283" height="36"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wnz-Zy-uEo">
+                        <rect key="frame" x="0.0" y="0.0" width="283" height="36"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9gb-QQ-99O">
+                                <rect key="frame" x="0.0" y="17" width="283" height="2"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="0.02328635045" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKx-lb-wSb" customClass="PlayPauseButton" customModule="AccessibilityChat" customModuleProvider="target">
+                                <rect key="frame" x="10" y="3" width="31" height="31"/>
+                                <state key="normal" image="play_white">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="ANH-uy-7cJ" eventType="touchUpInside" id="u32-a8-5I9"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="nB3-LE-ZGX">
+                                <rect key="frame" x="10" y="8" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.03944396774541703" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LKx-lb-wSb" firstAttribute="leading" secondItem="Wnz-Zy-uEo" secondAttribute="leading" constant="10" id="7vI-B0-zC8"/>
+                            <constraint firstAttribute="trailing" secondItem="9gb-QQ-99O" secondAttribute="trailing" constant="-10" id="ONq-0Y-Kz6"/>
+                            <constraint firstItem="9gb-QQ-99O" firstAttribute="leading" secondItem="Wnz-Zy-uEo" secondAttribute="leading" id="SwW-32-090"/>
+                            <constraint firstItem="9gb-QQ-99O" firstAttribute="centerY" secondItem="Wnz-Zy-uEo" secondAttribute="centerY" id="a3D-W2-RQl"/>
+                            <constraint firstItem="LKx-lb-wSb" firstAttribute="centerY" secondItem="Wnz-Zy-uEo" secondAttribute="centerY" id="oBQ-H1-E1b"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="sRE-QU-VjP"/>
+            <size key="customSize" width="283" height="36"/>
+            <connections>
+                <outlet property="activityIndicator" destination="nB3-LE-ZGX" id="sOg-b5-rCU"/>
+                <outlet property="bubbleView" destination="Wnz-Zy-uEo" id="ce1-g7-oY0"/>
+                <outlet property="playPauseButton" destination="LKx-lb-wSb" id="Wm2-W6-rnT"/>
+                <outlet property="progressView" destination="9gb-QQ-99O" id="jmo-W3-tmN"/>
+            </connections>
+            <point key="canvasLocation" x="154.40000000000001" y="-9.8950524737631191"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play_white" width="31" height="31"/>
+    </resources>
+</document>

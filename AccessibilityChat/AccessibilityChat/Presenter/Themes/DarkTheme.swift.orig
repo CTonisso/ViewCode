@@ -1,0 +1,64 @@
+//
+//  DarkTheme.swift
+//  AccessibilityChat
+//
+//  Created by Julianny Favinha on 10/25/18.
+//  Copyright © 2018 Bianca Itiroko. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class DarkTheme: Theme {
+<<<<<<< HEAD
+    
+    
+=======
+>>>>>>> master
+    var backgroundColor: UIColor = .black
+    var gradientColors: [UIColor] = [.babyGreen, .greyblue, .bluePurple]
+    
+    var configTitleColor: UIColor = .babyGreen
+    var currentThemeTitleColor: UIColor = .babyGreen
+    var changeThemeButtonTitleColor: UIColor = .babyGreen
+    var changeThemeButtonColor: UIColor = .bluePurple
+    
+    var recordTitleColor: UIColor = .babyGreen
+    var recordDescriptionColor: UIColor = .babyGreen
+    var recordButtonTitleColor: UIColor = .white
+    var recordCancelButtonColor: UIColor = .bluePurpleTwo
+    var recordCancelButtonTitleColor: UIColor = .babyGreen
+    var recordPauseButtonTitleColor: UIColor = .babyGreen
+    
+    var confirmRecordLabelsColor: UIColor = .babyGreen
+    var confirmRecordButtonTitleColor: UIColor = .babyGreen
+    var confirmRecordButtonColor: UIColor = .bluePurpleTwo
+    var confirmRecordSeparatorColor: UIColor = .babyGreen
+    var confirmRecordProgressBarColor: UIColor = .black
+    
+    var exploreLabelsColor: UIColor = .babyGreen
+    var exploreButtonTitleColor: UIColor = .babyGreen
+    var exploreButtonColor: UIColor = .bluePurpleTwo
+    var previousButtonImage: UIImage = UIImage(named: "previousButton-Dark")!
+    var nextButtonImage: UIImage = UIImage(named: "nextButton-Dark")!
+
+    var formFieldLabelColor: UIColor = .babyGreen
+    var formFieldPlaceholderColor: UIColor = .blackTwo
+    var arrowDownImage: UIImage = UIImage(named: "arrowDown-Light")!
+    var registerButtonColor: UIColor = .bluePurpleTwo
+    var registerButtonTitleColor: UIColor = .babyGreen
+    
+    // Edit Profile
+    var editProfileLabelsColor: UIColor = .white
+    var primaryCellBackgroundColor: UIColor = .black
+    var secondaryCellBackgroundColor: UIColor = .black
+    var cellBorderColor: UIColor = .babyGreen
+    var editProfileUpArrow: UIImage = UIImage(named: "editProfileUpArrow-Dark")!
+    var editProfileDownArrow: UIImage = UIImage(named: "editProfileDownArrow-Dark")!
+    var editProfileSeparatorColor: UIColor = .babyGreen
+    
+    var playButton: UIImage = UIImage(named: "playButton-Dark")!
+    var pauseButton: UIImage = UIImage(named: "pauseButton-Dark")!
+    var redoButton: UIImage = UIImage(named: "redoButton-Dark")!
+    
+}

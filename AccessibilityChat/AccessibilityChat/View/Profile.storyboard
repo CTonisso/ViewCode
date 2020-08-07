@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4mt-qL-lZf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="1QA-aJ-SpY">
+            <objects>
+                <viewController id="4mt-qL-lZf" customClass="ProfileViewController" customModule="AccessibilityChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hsw-eV-gWo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sag-a2-Hny">
+                                <rect key="frame" x="16" y="50" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.3921568627" green="0.15686274510000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmQ-fe-xKk">
+                                <rect key="frame" x="16" y="109" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.3921568627" green="0.15686274510000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onde mora: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Au-Xu-Y4m">
+                                <rect key="frame" x="16" y="168" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.3921568627" green="0.15686274510000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2X7-QD-ida">
+                                <rect key="frame" x="62.5" y="247" width="250" height="62.5"/>
+                                <color key="backgroundColor" red="0.3921568627" green="0.15686274510000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="1eb-CQ-DdK"/>
+                                    <constraint firstAttribute="width" secondItem="2X7-QD-ida" secondAttribute="height" multiplier="6:1.5" id="8LG-Ti-6uO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Ouvir descrição pessoal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="listenDescription:" destination="4mt-qL-lZf" eventType="touchUpInside" id="dYu-QB-uLk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lz6-TU-eOx">
+                                <rect key="frame" x="62.5" y="359.5" width="250" height="62.5"/>
+                                <color key="backgroundColor" red="0.3921568627" green="0.15686274510000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="6WW-Ux-LjA"/>
+                                    <constraint firstAttribute="width" secondItem="lz6-TU-eOx" secondAttribute="height" multiplier="6:1.5" id="O2M-EK-d4V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Iniciar conversa">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startChat:" destination="4mt-qL-lZf" eventType="touchUpInside" id="nsA-Tc-HBF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gmQ-fe-xKk" firstAttribute="trailing" secondItem="sag-a2-Hny" secondAttribute="trailing" id="8Ls-TQ-GuQ"/>
+                            <constraint firstItem="5Au-Xu-Y4m" firstAttribute="leading" secondItem="gmQ-fe-xKk" secondAttribute="leading" id="N09-9a-xwN"/>
+                            <constraint firstItem="lz6-TU-eOx" firstAttribute="centerX" secondItem="94b-81-QMS" secondAttribute="centerX" id="Pqk-6p-vva"/>
+                            <constraint firstItem="sag-a2-Hny" firstAttribute="leading" secondItem="94b-81-QMS" secondAttribute="leading" constant="16" id="ZP5-fF-ldE"/>
+                            <constraint firstItem="5Au-Xu-Y4m" firstAttribute="top" secondItem="gmQ-fe-xKk" secondAttribute="bottom" constant="30" id="Zry-aD-KR5"/>
+                            <constraint firstItem="lz6-TU-eOx" firstAttribute="top" secondItem="2X7-QD-ida" secondAttribute="bottom" constant="50" id="aR5-NA-Wie"/>
+                            <constraint firstItem="gmQ-fe-xKk" firstAttribute="top" secondItem="sag-a2-Hny" secondAttribute="bottom" constant="30" id="aqV-aD-mY6"/>
+                            <constraint firstItem="94b-81-QMS" firstAttribute="trailing" secondItem="sag-a2-Hny" secondAttribute="trailing" constant="16" id="bSC-OY-mR5"/>
+                            <constraint firstItem="5Au-Xu-Y4m" firstAttribute="trailing" secondItem="sag-a2-Hny" secondAttribute="trailing" id="f7Y-4K-c7j"/>
+                            <constraint firstItem="gmQ-fe-xKk" firstAttribute="leading" secondItem="sag-a2-Hny" secondAttribute="leading" id="iGl-uj-qCv"/>
+                            <constraint firstItem="sag-a2-Hny" firstAttribute="top" secondItem="94b-81-QMS" secondAttribute="top" constant="30" id="ibP-BG-tL6"/>
+                            <constraint firstItem="2X7-QD-ida" firstAttribute="top" secondItem="5Au-Xu-Y4m" secondAttribute="bottom" constant="50" id="ozZ-Gz-mVI"/>
+                            <constraint firstItem="2X7-QD-ida" firstAttribute="centerX" secondItem="94b-81-QMS" secondAttribute="centerX" id="qct-aa-KsV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="94b-81-QMS"/>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="gmQ-fe-xKk" id="G0h-Tf-MQ0"/>
+                        <outlet property="locationLabel" destination="5Au-Xu-Y4m" id="yw7-cG-3La"/>
+                        <outlet property="nameLabel" destination="sag-a2-Hny" id="t6u-sf-ilg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Gc-g6-h7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

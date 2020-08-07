@@ -1,0 +1,63 @@
+//
+//  SettingsViewController.swift
+//  AccessibilityChat
+//
+//  Created by Carlos Marcelo Tonisso Junior on 11/21/18.
+//  Copyright © 2018 Bianca Itiroko. All rights reserved.
+//
+
+import UIKit
+
+class SettingsViewController: ACViewController {
+    
+    let titles: [String] = ["Gravar nova apresentação", "Selecionar tema"]
+
+    weak var appDelegate = UIApplication.shared.delegate as? AppDelegate
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+<<<<<<< Updated upstream
+
+}
+
+extension SettingsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return titles.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        cell.textLabel?.text = titles[indexPath.row]
+        
+        return cell
+    }
+    
+}
+=======
+>>>>>>> Stashed changes
+
+extension SettingsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            let recordViewController = UIStoryboard(name: "RecordDescription", bundle: nil)
+                .instantiateViewController(withIdentifier: "RecordDescription")
+                as? RecordDescriptionViewController
+            
+            NavigationHelper.shared.switchRootViewController(to: recordViewController,
+                                                             withAnimation: .revealFromTop)
+            
+            appDelegate?.window?.rootViewController?.dismiss(animated: true,
+                                                                  completion: nil)
+        } else if indexPath.row == 1 {
+            let chooseThemeController = ChooseThemeViewController()
+            
+            NavigationHelper.shared.switchRootViewController(to: chooseThemeController,
+                                                             withAnimation: .revealFromTop)
+            
+            appDelegate?.window?.rootViewController?.dismiss(animated: true,
+                                                             completion: nil)
+        }
+    }
+}
